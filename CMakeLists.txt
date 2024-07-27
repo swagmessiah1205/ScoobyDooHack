@@ -5,7 +5,7 @@ set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 project(YimMenu CXX ASM_MASM)
 
 if (NOT MSVC)
-  message(FATAL_ERROR "Unsupported compiler used '${CMAKE_CXX_COMPILER_ID}', YimMenu only supports MSVC.")
+  message(FATAL_ERROR "Unsupported compiler used '${CMAKE_CXX_COMPILER_ID}', ScoobyDooHack only supports MSVC.")
 endif()
 
 set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
@@ -27,8 +27,8 @@ message("\nFetching custom modules")
 include(cmake/gtav-classes.cmake)
 
 
-# YimMenu
-message(STATUS "YimMenu")
+# ScoobyDooHack
+message(STATUS "ScoobyDooHack")
 file(GLOB_RECURSE SRC_MAIN
     "${SRC_DIR}/**.hpp"
     "${SRC_DIR}/**.h"
