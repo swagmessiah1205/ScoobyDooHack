@@ -81,7 +81,7 @@ end)
 
 ### `MenuUnloaded`
 
-Event that is triggered when we unload YimMenu.
+Event that is triggered when we unload ScoobyDooHack.
 **Example Usage:**
 ```lua
 event.register_handler(menu_event.MenuUnloaded, function ()

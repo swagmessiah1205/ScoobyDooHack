@@ -45,7 +45,7 @@ namespace big
 		{
 			g.session.chat_translator.enabled = false;
 			g_notification_service.push_error("TRANSLATOR_TOGGLE"_T.data(), "TRANSLATOR_FAILED_TO_CONNECT"_T.data());
-			LOG(WARNING) << "[Chat Translator]Unable to connect to LibreTranslate server. Follow the guide in Yimmenu Wiki to setup LibreTranslate server on your computer.";
+			LOG(WARNING) << "[Chat Translator]Unable to connect to LibreTranslate server. Follow the guide in ScoobyDooHack Wiki to setup LibreTranslate server on your computer.";
 		}
 		else
 		{

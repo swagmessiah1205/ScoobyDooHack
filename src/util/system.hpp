@@ -23,7 +23,7 @@ namespace big::system
 				auto crossmap_txt_file            = std::ifstream(crossmap_txt_file_path);
 				if (!crossmap_txt_file.is_open())
 				{
-					LOG(FATAL) << "Need the crossmap.txt file from YimMenu repo. Put into %appdata%/YimMenu folder.";
+					LOG(FATAL) << "Need the crossmap.txt file from ScoobyDooHack repo. Put into %appdata%/ScoobyDooHack folder.";
 					return;
 				}
 
@@ -48,7 +48,7 @@ namespace big::system
 				auto native_json_file            = std::ifstream(native_json_file_path);
 				if (!native_json_file.is_open())
 				{
-					LOG(FATAL) << "Need the natives.json file from YimMenu repo. Put into %appdata%/YimMenu folder.";
+					LOG(FATAL) << "Need the natives.json file from ScoobyDooHack repo. Put into %appdata%/ScoobyDooHack folder.";
 					return;
 				}
 				nlohmann::json native_json = nlohmann::json::parse(native_json_file);

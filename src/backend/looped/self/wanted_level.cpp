@@ -99,7 +99,7 @@ namespace big
 
 			if (!user_updated_wanted_level && !g.self.force_wanted_level)
 			{
-				// If the player hasn't updated the wanted level and we're not locking, then YimMenu should update its own slider value to reflect the actual in-game wanted level since it may have changed
+				// If the player hasn't updated the wanted level and we're not locking, then ScoobyDooHack should update its own slider value to reflect the actual in-game wanted level since it may have changed
 				g.self.wanted_level = g_local_player->m_player_info->m_wanted_level;
 			}
 		}
