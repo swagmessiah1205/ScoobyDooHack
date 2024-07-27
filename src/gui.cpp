@@ -96,9 +96,9 @@ namespace big
 
 	void gui::dx_init()
 	{
-		static auto bgColor     = ImVec4(0.09f, 0.094f, 0.129f, .9f);
-		static auto primary     = ImVec4(0.172f, 0.380f, 0.909f, 1.f);
-		static auto secondary   = ImVec4(0.443f, 0.654f, 0.819f, 1.f);
+		static auto bgColor     = ImVec4(0.0f, 0.0f, 0.0f, .9f);
+		static auto primary     = ImVec4(0.19f, 0.0f, 0.29f, 1.f);
+		static auto secondary   = ImVec4(1.0f, 1.0f, 1.0f, 1.f);
 		static auto whiteBroken = ImVec4(0.792f, 0.784f, 0.827f, 1.f);
 
 		auto& style             = ImGui::GetStyle();
@@ -117,7 +117,7 @@ namespace big
 		style.ChildRounding     = 4.0f;
 
 		auto& colors                          = style.Colors;
-		colors[ImGuiCol_Text]                 = ImGui::ColorConvertU32ToFloat4(g.window.text_color);
+		colors[ImGuiCol_Text]                 = ImVec4(0.0f, 0.0f, 0.0f, 1.00f);
 		colors[ImGuiCol_TextDisabled]         = ImVec4(0.24f, 0.23f, 0.29f, 1.00f);
 		colors[ImGuiCol_WindowBg]             = ImGui::ColorConvertU32ToFloat4(g.window.background_color);
 		colors[ImGuiCol_ChildBg]              = ImGui::ColorConvertU32ToFloat4(g.window.background_color);
